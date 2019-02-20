@@ -149,16 +149,6 @@ class ImportProducts extends \Symfony\Component\Console\Command\Command
         'additional_images' => ''
     ];
 
-    /*private $_defaultBundleFields = [
-        'bundle_sku_type' => 'fixed',
-        'bundle_price_type' => 'dynamic',
-        'bundle_price_view' => 'Price range',
-        'bundle_weight_type' => 'dynamic',
-        'qty' => 0,
-        'is_in_stock' => 1,
-        'manage_stock' => 1
-    ];*/
-
     private $urlRewrites = [];
 
 
