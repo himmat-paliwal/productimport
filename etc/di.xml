@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\CatalogImportExport\Model\Import\Product\Option" type="Eastlane\Productimport\Model\Import\Product\Option" />
+    <preference for="Magento\BundleImportExport\Model\Import\Product\Type\Bundle" type="Eastlane\Productimport\Model\Import\Product\Type\Bundle" />
+    <!--<preference for="Magento\UrlRewrite\Model\Storage\DbStorage" type="Eastlane\Productimport\Model\Storage\DbStorage" />-->
+    <preference for="Magento\UrlRewrite\Model\Storage\DbStorage" type="Eastlane\Productimport\Model\Storage\DbStorage"/>
+    <type name="Magento\Framework\Console\CommandListInterface">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="Eastlane_Productimport:import" xsi:type="object">Eastlane\Productimport\Console\Command\ImportProducts</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Magento\CatalogImportExport\Model\Import\Product\CategoryProcessor">
+        <plugin name="Eastlane_Productimport::failedCategoryCache" type="Eastlane\Productimport\Plugin\Model\CatalogImportExport\Import\Product\CategoryProcessor" />
+    </type>
+</config>

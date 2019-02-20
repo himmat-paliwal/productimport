@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
+    <!--<group id="bundleimportcron">
+        <job name="bundle_simple_product_creation" instance="Eastlane\Productimport\Cron\Simpleproductimport" method="execute">
+            <schedule>* */1 * * *</schedule>
+        </job>
+        <job name="bundle_product_creation" instance="Eastlane\Productimport\Cron\Bundleproductimport" method="execute">
+            <schedule>* */1 * * *</schedule>
+        </job>
+        <job name="bundle_configurable_product_creation" instance="Eastlane\Productimport\Cron\Configureproductimport" method="execute">
+            <schedule>* */1 * * *</schedule>
+        </job>
+        <job name="bundle_product_images" instance="Eastlane\Productimport\Cron\Imageimport" method="execute">
+            <schedule>* */1 * * *</schedule>
+        </job>
+    </group>-->
+</config>

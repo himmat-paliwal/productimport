@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+<system>
+    <section id="catalog_product_import" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+        <tab>catalog</tab>
+        <resource>Eastlane_Productimport::config</resource>
+        <label>Product Import</label>
+        <group id="product_import" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+            <label>Upload Product Import File</label>
+            <field id="product_import_file" translate="label" type="Magento\Config\Block\System\Config\Form\Field\File" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Upload Product File</label>
+                <backend_model>Eastlane\Productimport\Model\Config\Backend\UploadFile</backend_model>
+                <!--<upload_dir config="system" scope_info="2">Estalane</upload_dir>-->
+                <upload_dir>media/Estalane</upload_dir>
+                <comment>File formate must be in csv and file name must be product_import.csv otherwise your file will not uploaded.</comment>
+            </field>
+        </group>
+    </section>
+</system>
+</config>

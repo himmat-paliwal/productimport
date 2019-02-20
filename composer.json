@@ -1,0 +1,23 @@
+{
+  "name": "eastlane/productimport",
+  "description": "Eastlane Product Import",
+  "require": {
+    "php": "7.0.2|7.0.4|~7.0.6|~7.1.0",
+    "magento/module-sales": "*",
+    "magento/module-customer": "*"
+  },
+  "type": "magento2-module",
+  "version": "0.1.1",
+  "license": [
+    "OSL-3.0",
+    "AFL-3.0"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Eastlane\\Productimport\\": ""
+    }
+  }
+}
